@@ -1,0 +1,774 @@
+@font-face {
+  font-family: "lato";
+  src: url(../font/Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "lato-bold";
+  src: url(../font/Lato/Lato-bold.ttf);
+}
+@font-face {
+  font-family: "abrilFace";
+  src: url(../font/Abril_Fatface/AbrilFatface-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #16023c;
+  background: #f5f4f0;
+  font-family: "lato";
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #16023c;
+}
+header {
+  min-height: 10vh;
+  padding: 2rem 10%;
+  hr {
+    margin-top: 2rem;
+    color: #80808080;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .burger {
+      display: none;
+    }
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+  .youtube {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-left: 15rem;
+
+    .nav-utube {
+      background: #ffffff;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+      border-radius: 35px;
+      padding: 0.5rem;
+      width: 5rem;
+    }
+    img {
+      width: 30%;
+      margin-left: 40%;
+    }
+  }
+}
+/***** Main section ******/
+main {
+  padding: 2rem 10%;
+  .home {
+    position: relative;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .abs {
+      position: absolute;
+      width: 3.5rem;
+    }
+    .img1 {
+      top: 55rem;
+      right: 5rem;
+    }
+    .img2 {
+      left: 5rem;
+      top: 58rem;
+    }
+    .img3 {
+      top: 40rem;
+      right: 25rem;
+    }
+    .img4 {
+      top: 11rem;
+      left: 5rem;
+    }
+    .img6 {
+      top: 11rem;
+      right: 5rem;
+    }
+    .img5 {
+      top: 20rem;
+      left: 35rem;
+    }
+
+    h1 {
+      font-family: "Abril Fatface";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 6rem;
+      margin-bottom: 1rem;
+    }
+    & > p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.5rem;
+      background-color: white;
+      padding: 0 1rem;
+      color: #000000;
+    }
+    .hero-images {
+      padding-top: 5rem;
+      display: flex;
+      align-items: flex-start;
+
+      .pic,
+      .pic2 {
+        position: relative;
+        .circle {
+          position: absolute;
+          width: 230px;
+          height: 215px;
+          top: 11rem;
+          left: 0.5rem;
+          border-radius: 100%;
+          z-index: -1;
+          background-color: #ff8057;
+        }
+        img {
+          width: 100%;
+          border-bottom-left-radius: 160px;
+          border-bottom-right-radius: 160px;
+        }
+      }
+      .pic2 .circle {
+        background: #ffd059;
+        top: 8rem;
+        left: 0.2rem;
+        width: 210px;
+      }
+      .hero-text {
+        display: flex;
+        padding: 0 8rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        .intro ~ h2 {
+          align-self: center;
+        }
+        h2 {
+          font-family: "Abril Fatface";
+          font-size: 4rem;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-self: flex-start;
+          img {
+            width: 8rem;
+            margin-bottom: -2rem;
+          }
+        }
+        .intro,
+        .intro2 {
+          align-self: flex-start;
+          width: 30rem;
+          display: flex;
+          gap: 1rem;
+          img {
+            width: 15%;
+          }
+        }
+        .intro2 {
+          align-self: flex-end;
+          align-items: center;
+
+          h2 > img {
+            width: 8rem;
+          }
+        }
+        .intro2 + p {
+          margin-left: 24rem;
+        }
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #713ed9;
+          color: white;
+          font-family: "lato-bold";
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+          padding: 1.5rem;
+          border: none;
+          border-radius: 57.5px;
+
+          img {
+            width: 15%;
+          }
+        }
+      }
+    }
+  }
+  .programs {
+    margin-top: 8rem;
+    background: #16023c;
+    border-radius: 70px 70px 0px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+    color: #ffffff;
+    font-size: 1.4rem;
+    padding: 2rem;
+    line-height: 2rem;
+    a {
+      color: #ffffff;
+    }
+    .program {
+      width: 20rem;
+      h3 {
+        padding-bottom: 2rem;
+        font-size: 3rem;
+        font-family: "abrilFace";
+      }
+    }
+    .career {
+      background: #703edb;
+      border-radius: 30px;
+      width: 15rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  }
+
+  .about {
+    padding: 8rem 0;
+    display: flex;
+    justify-content: space-evenly;
+
+    .about-images {
+      width: 90%;
+      margin-left: -5rem;
+      padding-top: 5rem;
+      display: grid;
+      align-items: start;
+      gap: 1rem;
+      place-items: center;
+      grid-template-rows: 3;
+      grid-template-columns: 3;
+
+      .div1 {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        perspective: 150px;
+        align-self: center;
+        margin-left: -15rem;
+
+        .boy {
+          transform: rotateY(30deg);
+          width: 200px;
+          height: 300px;
+        }
+      }
+      .div2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        perspective: 200px;
+        margin-left: -16.5rem;
+        margin-top: 5rem;
+        .girl {
+          transform: rotateY(-30deg);
+          height: 230px;
+          width: 250px;
+        }
+      }
+      .div3 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        perspective: 200px;
+        .pray {
+          transform: rotateY(35deg);
+          width: 220px;
+        }
+      }
+    }
+    .about-text {
+      align-self: center;
+      width: 80rem;
+      text-align: justify;
+
+      h3 {
+        font-family: "Abril Fatface";
+        font-size: 4rem;
+        line-height: 8rem;
+      }
+
+      button {
+        background: #ff8057;
+        color: #ffffff;
+        font-weight: 700;
+        border-radius: 57.5px;
+        border: none;
+        margin-top: 2rem;
+        width: 150px;
+        padding: 1.2rem;
+      }
+    }
+  }
+
+  .teachers-section {
+    .ctrl {
+      padding: 3rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h4 {
+        font-family: "abrilFace";
+        font-size: 3rem;
+      }
+      span img {
+        width: 30px;
+        margin-left: 1rem;
+        cursor: pointer;
+      }
+    }
+
+    .teachers {
+      display: flex;
+      align-items: center;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      gap: 2rem;
+      width: 100%;
+    }
+    .teacher {
+      background-color: #16023c;
+      border-radius: 1rem;
+      flex: 1 0 29%;
+      .nam-role {
+        color: #ffffff;
+        padding: 2rem;
+      }
+      img {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+      }
+    }
+    .game {
+      img {
+        height: 271px;
+      }
+    }
+  }
+
+  .choice {
+    margin: 5rem 0;
+    h3 {
+      margin-bottom: 4rem;
+      font-family: "abrilFace";
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    .choice-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      .choice-item {
+        text-align: center;
+        padding: 0 2rem;
+        margin: 2rem 0;
+        flex: 1 1 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          background: #703edb;
+          padding: 1rem;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+  .apply {
+    background-color: #16023c;
+    color: #ffffff;
+    border-radius: 2rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .admit {
+      justify-self: flex-start;
+      width: 40rem;
+      padding: 4rem;
+      h6 {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+      p {
+        font-size: 3rem;
+        font-family: "Lato-Regular";
+      }
+      button {
+        background-color: #ff8057;
+        border-radius: 2rem;
+        margin-top: 2rem;
+        border: none;
+        width: 15rem;
+        padding: 1rem;
+      }
+    }
+
+    img {
+      width: 30%;
+    }
+  }
+
+  .testimonial {
+    margin: 4rem 0;
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+      span img {
+        width: 30px;
+        margin-left: 1rem;
+        cursor: pointer;
+      }
+      h4 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .testimonies {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      gap: 2rem;
+      width: 100%;
+
+      .testimony {
+        background-color: #ffffff;
+        border-radius: 1rem;
+        padding: 2rem;
+        flex: 1 0 29%;
+        .profile {
+          margin: 2rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          text-align: left;
+          gap: 2rem;
+
+          p {
+            font-size: 1.2rem;
+            color: #ff8057;
+          }
+          img {
+            width: 20%;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  padding: 2rem 10%;
+  display: flex;
+  gap: 5rem;
+
+  h4 {
+    margin-bottom: 2rem;
+  }
+  .start {
+    flex: 1;
+    padding-right: 6rem;
+
+    .socials {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+  }
+  .center {
+    a {
+      font-weight: 300;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 4rem;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .end {
+    flex: 1;
+  }
+}
+
+@media screen and(max-width:700px) {
+  body {
+    overflow-x: hidden;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  header {
+    min-height: 5vh;
+    padding: 2rem;
+
+    nav {
+      position: relative;
+
+      .burger {
+        display: block;
+      }
+      .nav-menu {
+        visibility: collapse;
+        // transition: 1s;
+        z-index: 99;
+        position: absolute;
+        width: 100%;
+        top: 8rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        background-color: #16023c;
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+    .youtube {
+      margin-left: 0;
+      margin-top: 3rem;
+    }
+  }
+  main {
+    padding: 0 1rem;
+
+    .home {
+      margin: 0;
+      padding-top: 0;
+
+      .abs,
+      .img1 {
+        display: none;
+      }
+      h1 {
+        font-size: 4rem;
+        text-align: center;
+      }
+
+      .hero-images {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .pic {
+          .circle {
+            left: 25%;
+          }
+          img {
+            width: 52%;
+          }
+        }
+        .pic2 {
+          display: none;
+        }
+        .hero-text {
+          margin-top: 5rem;
+          button {
+            margin-bottom: 2rem;
+          }
+          h2 {
+            align-self: center;
+            padding-top: 2rem;
+          }
+          .intro {
+            padding: 1rem;
+
+            img {
+              display: none;
+            }
+          }
+          .intro2 {
+            margin-top: 3rem;
+            align-self: center;
+            justify-content: center;
+
+            & + p {
+              margin-left: 0;
+            }
+          }
+          .intro2 > img {
+            display: none;
+          }
+        }
+      }
+    }
+    .programs {
+      flex-direction: column;
+      text-align: center;
+      font-size: 2rem;
+      // padding: 0;
+
+      .program,
+      .career {
+        width: 25rem;
+      }
+    }
+    .about {
+      padding: 5rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .about-images {
+        width: 100%;
+        margin: 0rem;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: inherit;
+
+        .div1 {
+          margin-left: 0rem;
+          margin-top: 0rem;
+          align-self: inherit;
+          flex: 1;
+          .boy {
+            transform: rotateY(0);
+            width: 100%;
+            height: 150px;
+          }
+        }
+        .div2 {
+          margin-left: 0rem;
+          margin-top: 0rem;
+          width: 30%;
+          flex: 1;
+          .girl {
+            transform: rotateY(0deg);
+            height: 150px;
+            width: 100%;
+          }
+        }
+        .div3 {
+          flex: 1;
+          width: 30%;
+          .pray {
+            transform: rotateY(0deg);
+            width: 100%;
+            height: 150px;
+          }
+        }
+      }
+      .about-text {
+        width: unset;
+        text-align: justify;
+
+        button {
+          margin-top: 2rem;
+        }
+      }
+    }
+    .teachers-section {
+      .teacher {
+        flex: 1 0 45%;
+
+        .nam-role {
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .game {
+        height: 230px;
+        img {
+          height: 155px;
+        }
+      }
+    }
+    .choice {
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      .choice-container {
+        gap: 1rem;
+
+        .choice-item {
+          img {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+    .apply {
+      flex-direction: column-reverse;
+
+      .admit {
+        width: 45rem;
+
+        h6 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 2rem;
+          padding: 1rem 0;
+        }
+      }
+
+      img {
+        margin-top: 2rem;
+        width: 50%;
+      }
+    }
+    .testimonial {
+      .testimonies {
+        .testimony {
+          flex: 1 0 80%;
+        }
+      }
+    }
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+}
