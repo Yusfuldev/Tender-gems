@@ -18,7 +18,7 @@
 ### Links
 
 - Solution URL: [Github](https://github.com/Yusfuldev/Tender-gems)
-- Live Site URL: [Live site](https://tender-gems.netlify.app/)
+
 
 ### Built with
 
